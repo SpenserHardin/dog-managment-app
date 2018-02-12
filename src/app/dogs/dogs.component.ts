@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {Dog} from '../modules/dog.module';
 
 @Component({
   selector: 'app-dogs',
@@ -7,7 +8,6 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DogsComponent implements OnInit {
 
-  dogList = [];
 
   constructor() { }
 

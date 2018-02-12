@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
+import {Dog} from '../../../modules/dog.module';
 
 @Component({
   selector: 'app-dog-item',
@@ -7,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DogItemComponent implements OnInit {
 
+  @Input() dogElement: Dog;
   constructor() { }
 
   ngOnInit() {

@@ -1,3 +1,7 @@
 <div>
-  <app-dog-item></app-dog-item>
+  <app-dog-item
+    style="cursor: pointer"
+    *ngFor="let dog of dogList"
+    [dogElement]="dog"
+  ></app-dog-item>
 </div>
